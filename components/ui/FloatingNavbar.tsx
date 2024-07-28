@@ -54,6 +54,7 @@ export const FloatingNav = ({
           y: visible ? 0 : -100,
           opacity: visible ? 1 : 0,
         }}
+        exit={{ opacity: 0 }}
         transition={{
           duration: 0.2,
         }}
@@ -67,7 +68,7 @@ export const FloatingNav = ({
         style={{
           backdropFilter: "blur(16px) saturate(180%)",
           backgroundColor: "rgba(17, 25, 40, 0.75)",
-          borderRadius: "12px",
+          borderRadius: "50px",
           border: "1px solid rgba(255, 255, 255, 0.125)",
         }}
       >
@@ -79,10 +80,18 @@ export const FloatingNav = ({
               "relative dark:text-neutral-50 items-center  flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
             )}
           >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            {/* add !cursor-pointer */}
-            {/* remove hidden sm:block for the mobile responsive */}
-            <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.7 }}
+              onHoverStart={(e) => {}}
+              onHoverEnd={(e) => {}}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              {/* add !cursor-pointer */}
+              {/* remove hidden sm:block for the mobile responsive */}
+
+              <span className=" text-sm !cursor-pointer">{navItem.name}</span>
+            </motion.div>
           </Link>
         ))}
         {/* remove this login btn */}

@@ -1,16 +1,21 @@
 export const navItems = [
+  { name: "Home", link: "/" },
   { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  // { name: "Projects", link: "#projects" },
+  // { name: "Work", link: "#experience" },
+  { name: "Work", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
+  { name: "Blog", link: "https://tuka.hashnode.dev/" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title:
+      "Dedicated AI Engineer committed to creating innovative & intelligent solutions",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
+    className: "lg:col-span-3 md:col-span-4 md:row-span-2 lg:min-h-[35vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
     img: "/b1.svg",
@@ -18,9 +23,9 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I prioritize collaboration, fostering open communication",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "lg:col-span-2 md:col-span-2 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "",
@@ -30,7 +35,7 @@ export const gridItems = [
     id: 3,
     title: "My tech stack",
     description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    className: "md:col-span-2 md:row-span-4",
     imgClassName: "",
     titleClassName: "justify-center",
     img: "",
@@ -38,30 +43,32 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Passionate about leveraging AI to drive meaningful impact",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    className: "md:col-span-3 md:row-span-4",
+    imgClassName: "absolute right-0 bottom-0 md:w-76 w-50",
+    titleClassName: "justify-center md:justify-start lg:justify-center",
+    img: "/b5.svg",
+    spareImg: "/grid.svg",
+    // "/b4.svg",
   },
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
-    className: "md:col-span-3 md:row-span-2",
-    imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
+    title:
+      "Currently honing my skills as a Software Engineering Fellow at Headstarter AI",
+    description: "",
+    className: "md:col-span-3 md:row-span-1",
+    imgClassName: "absolute h-full right-0 md:w-56 w-40",
+    titleClassName: "justify-center md:justify-end lg:justify-center top-0",
+    img: "/HAi-logo",
     spareImg: "/grid.svg",
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Do you want to connect or collaborate with me?",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-2 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -72,68 +79,100 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "AI Pantry Tracker | HeadstarterAI",
+    des: "[In progress]",
+    img: "/p2.svg",
+    iconLists: [],
+    link: "https://github.com/alartuka/ZamanNews",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "ZamanNews",
+    des: "A website that allows users to view news articles from the past on any given date and country. [In progress]",
+    img: "/404img.png",
+    iconLists: ["/re.svg"],
+    link: "https://github.com/alartuka/ZamanNews",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "mGenAi",
+    des: "AI-powered email generator.",
+    img: "/404img.png",
+    iconLists: [],
+    link: "https://github.com/alartuka/mGen_ai",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Forage | TechNova22 Hackathon",
+    des: "Efficiency optimization system for foodbank operations that makes use of Machine Learning",
+    img: "/TN22_logo.jpg",
+    iconLists: ["/re.svg", "/tail.svg"],
+    link: "https://github.com/alartuka/Forage",
+  },
+  {
+    id: 5,
+    title: "ProPy | Academic",
+    des: "Image manipulation app, developed with linear algebra fundamentals using processing5.js.",
+    img: "/ProPy_mockup.png",
+    iconLists: [],
+    link: "https://github.com/alartuka/ProPy",
+  },
+  {
+    id: 6,
+    title: "SupportWall | TechNova21 Hackathon",
+    des: "Anonymous support system for students with a sticky-notes organized infinite wall to express themselves anonymously.",
+    img: "/SupoortWall.png",
+    iconLists: [],
+    link: "https://github.com/alartuka/SupportWall",
+  },
+  {
+    id: 7,
+    title: "Runners-Tracker",
+    des: "A python GUI developed with tkinter, to track distance ran on entered dates.",
+    img: "/404img.png",
+    iconLists: [],
+    link: "https://github.com/alartuka/Runners-Tracker",
+  },
+  {
+    id: 8,
+    title: "BrInFo | Academic",
+    des: "A multi-functional and student-centred program to focus, get inspired or take a break. Includes a 25 minutes timer, quotes random generator, and a game.",
+    img: "/404img.png",
+    iconLists: [],
+    link: "https://github.com/alartuka/BrInFo",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Tuka was a thoughtful volunteer… I happily endorse Tuka as a promising young leader, who deserves an opportunity for growth and skills development — they have proven youth can and DO make a difference!",
+    name: "Sydney Attwood",
+    title: "Youth Engagement Coordinator at Volunteer Action Center Waterloo Region",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Tuka has many strengths that she contributed to EPYC! She is very artistic, an attentive listener, and open to sharing. She got out of her comfort zone by contributing to the team presentation, and worked well as a teammember. She was also the top point-earner for the ‘in-between games’ activities!",
+    name: "Silvia & Lucky",
+    title: "EPYC Group Facilitators",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "She [Tuka] is always willing to participate in youth engagement opportunities with other community organizations and ensure the voice of young people are represented. She is always willing to help where needed and take on additional tasks. I’ve appreciated having Tuka on KYAC and look forward to continuing to work with her in the coming session!",
+    name: "Dannon Vasey",
+    title: "Youth Services Coordinator at City of Kitchener (KYAC)",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Tuka represented Waterloo Region and CYPT at the session and provided valuable insights and ideas which will help shape the survey launch in communities across Waterloo Region. Tuka also supported UNICEF Canada and communities across Canada in brainstorming effective strategies to promote the survey, and shape messaging around the importance of youth participation. We appreciate Tuka’s support with this project!",
+    name: "Joana Lincho",
+    title: "Youth Engagement in Systems Lead at Carizon Family and Community Services and  CYPT",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Tuka Alarbi participated in the Children and Youth Planning Table’s youTHINK event… to bring young people into the process of designing a survey that will aim to better understand the experiences of children and youth in Waterloo Region, and how to improve wellbeing.",
+    name: "Monika Bodemer",
+    title: "Program Assistant at Children and Youth Planning Table",
   },
 ];
 
@@ -173,45 +212,55 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineering Fellow",
+    desc: "Building 8+ AI apps and APIs using Next.js, OpenAI, Pinecone, StripeAPI in 5 weeks and a final project with a goal of attaining 1000 users acounts or on waitlist or $1000 in revenue",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
+  // {
+  //   id: 1,
+  //   title: "Frontend Engineer Intern",
+  //   desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp1.svg",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Mobile App Dev - JSM Tech",
+  //   desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+  //   className: "md:col-span-2", // change to md:col-span-2
+  //   thumbnail: "/exp2.svg",
+  // },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Freelance Web Dev Project",
+    desc: "Led the dev of a webapp for a client, from initial concept to deployment.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/alartuka",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://linkedin.com/in/tukaalarbi",
   },
 ];

@@ -1,12 +1,9 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-// Also install this npm i --save-dev @types/react-lottie
-import Lottie from "react-lottie";
-
+import Lottie from "react-lottie"; // Also install this npm i --save-dev @types/react-lottie
 import { cn } from "@/lib/utils";
-
-
+import { socialMedia } from "@/data";
+import Link from "next/link";
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
@@ -52,8 +49,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["Flask", "OpenAI", "Firebase"];
+  const rightLists = ["P5JS", "ReactJS", "NextJS"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +64,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "tukaalarbi@gmail.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -93,19 +90,20 @@ export const BentoGridItem = ({
           {img && (
             <img
               src={img}
-              alt={img}
+              alt={`Tuka Alsharief | Tuka Alarbi ${img}`}
               className={cn(imgClassName, "object-cover object-center ")}
             />
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
-            } `}
+          className={`absolute right-0 -bottom-5 ${
+            id === 5 && "w-full opacity-80"
+          } `}
         >
           {spareImg && (
             <img
               src={spareImg}
-              alt={spareImg}
+              alt={`Tuka Alsharief | Tuka Alarbi ${img}`}
               //   width={220}
               className="object-cover object-center w-full h-full"
             />
@@ -141,9 +139,9 @@ export const BentoGridItem = ({
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-15 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-3 md:gap-3 lg:gap-5">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
@@ -170,26 +168,46 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative">
+            <div className="mt-5 relative flex gap-3 space-x-2 space-y-4">
               {/* button border magic from tailwind css buttons  */}
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
               {/* add handleCopy() for the copy the text */}
               <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
+                className={`absolute -bottom-2 right-0 ${
+                  copied ? "block" : "block"
+                }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
+                title={copied ? "Email is Copied!" : "Copy my Email"}
                 icon={<IoCopyOutline />}
                 position="left"
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+
+              <div className="flex items-center justify-center bottom-4 md:gap-3 gap-6">
+                {socialMedia.map((info) => (
+                  <Link
+                    key={`link=${info.id}`}
+                    href={info.link}
+                    className={cn(
+                      "w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+                    )}
+                  >
+                    <img
+                      src={info.img}
+                      alt="Tuka Alsharief | Tuka Alarbi | Icons"
+                      width={20}
+                      height={20}
+                    />
+                  </Link>
+                ))}
+              </div>
             </div>
           )}
         </div>
