@@ -1,13 +1,12 @@
 "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Link from "next/link";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant, staggerContainer } from './ui/motion';
-
+import Image from "next/image";
 
 const RecentProjects = () => {
   return (
@@ -23,6 +22,7 @@ const RecentProjects = () => {
               variants={fadeIn("right", "spring", item.id * 0.5, 0.75)}
               initial="hidden"
               whileInView="show"
+              key={item.id}
               className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
             >
               <div
@@ -35,9 +35,9 @@ const RecentProjects = () => {
                       className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                       style={{ backgroundColor: "#13162D" }}
                     >
-                      <img src="/bg.png" alt="Tuka Alsharief | Tuka Alarbi" />
+                      <Image src="/bg.png" alt="Tuka Alsharief | Tuka Alarbi" />
                     </div>
-                    <img
+                    <Image
                       src={item.img}
                       alt="Tuka Alsharief | Tuka Alarbi"
                       className="z-10 absolute bottom-0"
@@ -68,7 +68,7 @@ const RecentProjects = () => {
                             transform: `translateX(-${5 * index + 2}px)`,
                           }}
                         >
-                          <img src={icon} alt="icon5" className="p-2" />
+                          <Image src={icon} alt="icon5" className="p-2" />
                         </div>
                       ))}
                     </div>

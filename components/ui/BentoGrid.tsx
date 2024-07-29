@@ -8,6 +8,7 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -88,7 +89,7 @@ export const BentoGridItem = ({
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
-            <img
+            <Image
               src={img}
               alt={`Tuka Alsharief | Tuka Alarbi ${img}`}
               className={cn(imgClassName, "object-cover object-center ")}
@@ -101,7 +102,7 @@ export const BentoGridItem = ({
           } `}
         >
           {spareImg && (
-            <img
+            <Image
               src={spareImg}
               alt={`Tuka Alsharief | Tuka Alarbi ${img}`}
               //   width={220}
@@ -199,7 +200,7 @@ export const BentoGridItem = ({
                       "w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
                     )}
                   >
-                    <img
+                    <Image
                       src={info.img}
                       alt="Tuka Alsharief | Tuka Alarbi | Icons"
                       width={20}

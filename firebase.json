@@ -1,6 +1,7 @@
 {
   "hosting": {
     "source": ".",
+    "site": "tuka-alsharief",
     "ignore": [
       "firebase.json",
       "**/.*",
