@@ -39,7 +39,7 @@ const RecentProjects = () => {
                     </div>
                     <img
                       src={item.img}
-                      alt="cover"
+                      alt="Tuka Alsharief | Tuka Alarbi"
                       className="z-10 absolute bottom-0"
                     />
                   </div>
@@ -78,7 +78,7 @@ const RecentProjects = () => {
                         className="flex lg:text-xl md:text-xs text-sm text-purple"
                         href={item.link}
                       >
-                        Check Live Site
+                        GitHub
                       </Link>
                       <FaLocationArrow className="ms-3" color="#CBACF9" />
                     </div>
