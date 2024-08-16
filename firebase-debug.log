@@ -1,0 +1,305 @@
+[debug] [2024-07-29T06:52:38.060Z] ----------------------------------------------------------------------
+[debug] [2024-07-29T06:52:38.064Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tukaa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting:tuka-alsharief
+[debug] [2024-07-29T06:52:38.065Z] CLI Version:   13.14.2
+[debug] [2024-07-29T06:52:38.065Z] Platform:      win32
+[debug] [2024-07-29T06:52:38.066Z] Node Version:  v20.16.0
+[debug] [2024-07-29T06:52:38.066Z] Time:          Mon Jul 29 2024 02:52:38 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2024-07-29T06:52:38.066Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-29T06:52:38.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-29T06:52:38.191Z] > authorizing via signed-in user (tukaalarbi@gmail.com)
+[debug] [2024-07-29T06:52:38.191Z] [iam] checking project tuka-alsharief-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-07-29T06:52:38.193Z] > refreshing access token with scopes: []
+[debug] [2024-07-29T06:52:38.198Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-07-29T06:52:38.198Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-29T06:52:38.631Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-07-29T06:52:38.632Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-07-29T06:52:38.668Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions [none]
+[debug] [2024-07-29T06:52:38.668Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions x-goog-quota-user=projects/tuka-alsharief-site
+[debug] [2024-07-29T06:52:38.669Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-29T06:52:39.119Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions 200
+[debug] [2024-07-29T06:52:39.120Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-07-29T06:52:39.122Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site [none]
+[debug] [2024-07-29T06:52:39.651Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site 200
+[debug] [2024-07-29T06:52:39.651Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site {"projectId":"tuka-alsharief-site","projectNumber":"498292335178","displayName":"Tuka Alsharief","name":"projects/tuka-alsharief-site","resources":{"hostingSite":"tuka-alsharief-site","realtimeDatabaseInstance":"tuka-alsharief-site-default-rtdb"},"state":"ACTIVE","etag":"1_e080c645-9d1a-4eaa-8fc3-09d205329155"}
+[debug] [2024-07-29T06:52:46.297Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites pageToken=&pageSize=10
+[debug] [2024-07-29T06:52:46.918Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites 200
+[debug] [2024-07-29T06:52:46.919Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites {"sites":[{"name":"projects/tuka-alsharief-site/sites/tuka-alsharief","defaultUrl":"https://tuka-alsharief.web.app","appId":"1:498292335178:web:4bc0273b2498e1291dbcb3","type":"USER_SITE"},{"name":"projects/tuka-alsharief-site/sites/tuka-alsharief-site","defaultUrl":"https://tuka-alsharief-site.web.app","appId":"1:498292335178:web:8ec44f39a94361ec1dbcb3","type":"DEFAULT_SITE"}]}
+[debug] [2024-07-29T06:52:46.920Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:498292335178:web:4bc0273b2498e1291dbcb3/config [none]
+[debug] [2024-07-29T06:52:47.737Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:498292335178:web:4bc0273b2498e1291dbcb3/config 200
+[debug] [2024-07-29T06:52:47.738Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:498292335178:web:4bc0273b2498e1291dbcb3/config {"projectId":"tuka-alsharief-site","appId":"1:498292335178:web:4bc0273b2498e1291dbcb3","databaseURL":"https://tuka-alsharief-site-default-rtdb.firebaseio.com","storageBucket":"tuka-alsharief-site.appspot.com","apiKey":"AIzaSyCBwOz-8DOQ6_PrEczbKQcM6mdlHofPR2c","authDomain":"tuka-alsharief-site.firebaseapp.com","messagingSenderId":"498292335178","measurementId":"G-B2PH9BLXB1"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-07-29T06:53:02.638Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites/tuka-alsharief-site [none]
+[debug] [2024-07-29T06:53:03.033Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites/tuka-alsharief-site 200
+[debug] [2024-07-29T06:53:03.034Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites/tuka-alsharief-site {"name":"projects/tuka-alsharief-site/sites/tuka-alsharief-site","defaultUrl":"https://tuka-alsharief-site.web.app","appId":"1:498292335178:web:8ec44f39a94361ec1dbcb3","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info]    - Environments: .env.local
+   - Experiments (use at your own risk):
+     · instrumentationHook
+
+
+[info]    Creating an optimized production build ...
+
+[info] [@sentry/nextjs - Node.js] Info: Using environment variables configured in ".env.sentry-build-plugin".
+
+[info] [@sentry/nextjs - Node.js] Warning: No project provided. Will not create release. Please set the `project` option to your Sentry project slug.
+
+[info] [@sentry/nextjs - Node.js] Warning: No project provided. Will not upload source maps. Please set the `project` option to your Sentry project slug.
+
+[info] [@sentry/nextjs - Node.js] Info: Sending telemetry data on issues and performance to Sentry. To disable telemetry, set `options.telemetry` to `false`.
+
+[info] [@sentry/nextjs - Edge] Info: Using environment variables configured in ".env.sentry-build-plugin".
+
+[info] [@sentry/nextjs - Edge] Warning: No project provided. Will not create release. Please set the `project` option to your Sentry project slug.
+
+[info] [@sentry/nextjs - Edge] Warning: No project provided. Will not upload source maps. Please set the `project` option to your Sentry project slug.
+
+[info] [@sentry/nextjs - Edge] Info: Sending telemetry data on issues and performance to Sentry. To disable telemetry, set `options.telemetry` to `false`.
+
+[info] [@sentry/nextjs - Client] Info: Using environment variables configured in ".env.sentry-build-plugin".
+
+[info] [@sentry/nextjs - Client] Warning: No project provided. Will not create release. Please set the `project` option to your Sentry project slug.
+
+[info] [@sentry/nextjs - Client] Warning: No project provided. Will not upload source maps. Please set the `project` option to your Sentry project slug.
+
+[info] [@sentry/nextjs - Client] Info: Sending telemetry data on issues and performance to Sentry. To disable telemetry, set `options.telemetry` to `false`.
+
+[info]  ✓ Compiled successfully
+
+[info]    Skipping validation of types
+
+[info]    Linting ...
+
+[info] 
+./components/ui/CanvasRevealEffect.tsx
+282:6  Warning: React Hook useMemo has a missing dependency: 'getUniforms'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/ui/Globe.tsx
+99:6  Warning: React Hook useEffect has missing dependencies: '_buildData' and '_buildMaterial'. Either include them or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+165:6  Warning: React Hook useEffect has missing dependencies: 'defaultProps.atmosphereAltitude', 'defaultProps.atmosphereColor', 'defaultProps.polygonColor', 'defaultProps.showAtmosphere', and 'startAnimation'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+224:6  Warning: React Hook useEffect has a missing dependency: 'data.length'. Either include it or remove the dependency array. Mutable values like 'globeRef.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+240:6  Warning: React Hook useEffect has missing dependencies: 'gl', 'size.height', and 'size.width'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/ui/GradientBg.tsx
+59:6  Warning: React Hook useEffect has missing dependencies: 'blendingValue', 'fifthColor', 'firstColor', 'fourthColor', 'gradientBackgroundEnd', 'gradientBackgroundStart', 'pointerColor', 'secondColor', 'size', and 'thirdColor'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+74:6  Warning: React Hook useEffect has missing dependencies: 'curX' and 'curY'. Either include them or remove the dependency array. You can also do a functional update 'setCurX(c => ...)' if you only need 'curX' in the 'setCurX' call.  react-hooks/exhaustive-deps
+
+./components/ui/HoverBorder.tsx
+57:6  Warning: React Hook useEffect has missing dependencies: 'duration' and 'rotateDirection'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/ui/InfiniteCards.tsx
+28:6  Warning: React Hook useEffect has a missing dependency: 'addAnimation'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+./components/ui/stars-background.tsx
+103:47  Warning: The ref value 'containerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'containerRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+
+./components/ui/TextGenerateEffect.tsx
+27:6  Warning: React Hook useEffect has missing dependencies: 'animate' and 'wordsArray'. Either include them or remove the dependency array. Mutable values like 'scope.current' aren't valid dependencies because mutating them doesn't re-render the component.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/4) ...
+
+[info]    Generating static pages (1/4) 
+
+[info] ReferenceError: inter is not defined
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\app\_not-found.js:6:96
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51257
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51230
+    at u.handleCallbackErrors.status (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11823)
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11798
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:10161
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11594
+    at s.withScope (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:24:117884)
+ReferenceError: inter is not defined
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\app\_not-found.js:6:96
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51257
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51230
+    at u.handleCallbackErrors.status (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11823)
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11798
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:10161
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11594
+    at s.withScope (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:24:117884)
+
+[info]    Generating static pages (2/4) 
+
+[info] ReferenceError: inter is not defined
+    at m (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\app\page.js:15:96)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51257
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51230
+    at u.handleCallbackErrors.status (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11823)
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11798
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:10161
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11594
+    at s.withScope (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:24:117884)
+
+[info] ReferenceError: inter is not defined
+    at m (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\app\page.js:15:96)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51257
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51230
+    at u.handleCallbackErrors.status (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11823)
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11798
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:10161
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11594
+    at s.withScope (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:24:117884)
+
+[info] 
+Error occurred prerendering page "/_not-found". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: inter is not defined
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\app\_not-found.js:6:96
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51257
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51230
+    at u.handleCallbackErrors.status (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11823)
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11798
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:10161
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11594
+    at s.withScope (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:24:117884)
+
+[info]    Generating static pages (3/4) 
+
+[info] 
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+ReferenceError: inter is not defined
+    at m (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\app\page.js:15:96)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51257
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:51230
+    at u.handleCallbackErrors.status (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11823)
+    at t.handleCallbackErrors (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:19241)
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11798
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:10161
+    at C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:35:11594
+    at s.withScope (C:\Users\tukaa\PT24\Personal-Landing-Page\.next\server\chunks\752.js:24:117884)
+
+[info]  ✓ Generating static pages (4/4) 
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/_not-found
+	/page: /
+
+[debug] [2024-07-29T06:53:37.795Z] Error: ENOENT: no such file or directory, open 'C:\Users\tukaa\PT24\Personal-Landing-Page\.next\export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-08-11T16:20:58.007Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T16:20:58.015Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tukaa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-08-11T16:20:58.017Z] CLI Version:   13.14.2
+[debug] [2024-08-11T16:20:58.018Z] Platform:      win32
+[debug] [2024-08-11T16:20:58.019Z] Node Version:  v20.16.0
+[debug] [2024-08-11T16:20:58.019Z] Time:          Sun Aug 11 2024 12:20:58 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2024-08-11T16:20:58.020Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-11T16:20:58.031Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-08-11T16:20:58.447Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T16:20:58.448Z] > authorizing via signed-in user (tukaalarbi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\tukaa\PT24\Personal-Landing-Page
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-08-11T16:20:58.748Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-08-11T16:20:58.749Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-08-11T16:21:14.898Z] Using project from CLI flag: tuka-alsharief-site
+[debug] [2024-08-11T16:21:14.901Z] > refreshing access token with scopes: []
+[debug] [2024-08-11T16:21:14.904Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-08-11T16:21:14.904Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-11T16:21:15.131Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-08-11T16:21:15.132Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-08-11T16:21:15.176Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site [none]
+[debug] [2024-08-11T16:21:15.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site 200
+[debug] [2024-08-11T16:21:15.846Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site {"projectId":"tuka-alsharief-site","projectNumber":"498292335178","displayName":"Tuka Alsharief","name":"projects/tuka-alsharief-site","resources":{"hostingSite":"tuka-alsharief-site","realtimeDatabaseInstance":"tuka-alsharief-site-default-rtdb"},"state":"ACTIVE","etag":"1_e080c645-9d1a-4eaa-8fc3-09d205329155"}
+[info] i  Using project tuka-alsharief-site (Tuka Alsharief) 
+[info] 
+=== Hosting Setup
+[debug] [2024-08-11T16:21:15.866Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site [none]
+[debug] [2024-08-11T16:21:16.154Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site 200
+[debug] [2024-08-11T16:21:16.154Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site {"projectId":"tuka-alsharief-site","projectNumber":"498292335178","displayName":"Tuka Alsharief","name":"projects/tuka-alsharief-site","resources":{"hostingSite":"tuka-alsharief-site","realtimeDatabaseInstance":"tuka-alsharief-site-default-rtdb"},"state":"ACTIVE","etag":"1_e080c645-9d1a-4eaa-8fc3-09d205329155"}
+[debug] [2024-08-11T16:23:02.665Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T16:23:02.672Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tukaa\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-08-11T16:23:02.672Z] CLI Version:   13.14.2
+[debug] [2024-08-11T16:23:02.673Z] Platform:      win32
+[debug] [2024-08-11T16:23:02.673Z] Node Version:  v20.16.0
+[debug] [2024-08-11T16:23:02.673Z] Time:          Sun Aug 11 2024 12:23:02 GMT-0400 (Eastern Daylight Saving Time)
+[debug] [2024-08-11T16:23:02.673Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-08-11T16:23:02.848Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T16:23:02.849Z] > authorizing via signed-in user (tukaalarbi@gmail.com)
+[debug] [2024-08-11T16:23:02.849Z] [iam] checking project tuka-alsharief-site for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-11T16:23:02.854Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions [none]
+[debug] [2024-08-11T16:23:02.854Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions x-goog-quota-user=projects/tuka-alsharief-site
+[debug] [2024-08-11T16:23:02.855Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-11T16:23:03.384Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions 200
+[debug] [2024-08-11T16:23:03.384Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/tuka-alsharief-site:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-11T16:23:03.386Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site [none]
+[debug] [2024-08-11T16:23:03.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site 200
+[debug] [2024-08-11T16:23:03.778Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tuka-alsharief-site {"projectId":"tuka-alsharief-site","projectNumber":"498292335178","displayName":"Tuka Alsharief","name":"projects/tuka-alsharief-site","resources":{"hostingSite":"tuka-alsharief-site","realtimeDatabaseInstance":"tuka-alsharief-site-default-rtdb"},"state":"ACTIVE","etag":"1_e080c645-9d1a-4eaa-8fc3-09d205329155"}
+[debug] [2024-08-11T16:23:12.001Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites pageToken=&pageSize=10
+[debug] [2024-08-11T16:23:12.891Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites 200
+[debug] [2024-08-11T16:23:12.892Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites {"sites":[{"name":"projects/tuka-alsharief-site/sites/tuka-alsharief","defaultUrl":"https://tuka-alsharief.web.app","appId":"1:498292335178:web:4bc0273b2498e1291dbcb3","type":"USER_SITE"},{"name":"projects/tuka-alsharief-site/sites/tuka-alsharief-site","defaultUrl":"https://tuka-alsharief-site.web.app","appId":"1:498292335178:web:8ec44f39a94361ec1dbcb3","type":"DEFAULT_SITE"}]}
+[debug] [2024-08-11T16:23:12.893Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:498292335178:web:4bc0273b2498e1291dbcb3/config [none]
+[debug] [2024-08-11T16:23:13.639Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:498292335178:web:4bc0273b2498e1291dbcb3/config 200
+[debug] [2024-08-11T16:23:13.639Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:498292335178:web:4bc0273b2498e1291dbcb3/config {"projectId":"tuka-alsharief-site","appId":"1:498292335178:web:4bc0273b2498e1291dbcb3","databaseURL":"https://tuka-alsharief-site-default-rtdb.firebaseio.com","storageBucket":"tuka-alsharief-site.appspot.com","apiKey":"AIzaSyCBwOz-8DOQ6_PrEczbKQcM6mdlHofPR2c","authDomain":"tuka-alsharief-site.firebaseapp.com","messagingSenderId":"498292335178","measurementId":"G-B2PH9BLXB1"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-08-11T16:23:37.037Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites/tuka-alsharief-site [none]
+[debug] [2024-08-11T16:23:37.586Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites/tuka-alsharief-site 200
+[debug] [2024-08-11T16:23:37.587Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/tuka-alsharief-site/sites/tuka-alsharief-site {"name":"projects/tuka-alsharief-site/sites/tuka-alsharief-site","defaultUrl":"https://tuka-alsharief-site.web.app","appId":"1:498292335178:web:8ec44f39a94361ec1dbcb3","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.4
+
+[info]    - Environments: .env.local
+
+
+[info]    Creating an optimized production build ...
+

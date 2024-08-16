@@ -4,16 +4,26 @@ import { socialMedia } from "@/data";
 import MagicButton from "./MagicButton";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const { push } = useRouter();
+
+  const handleContactForm = () => {
+    push('/ContactForm');
+  }
+
   return (
     <footer className="w-full pt-20 pb-10" id="contact">
       {/* background grid */}
       <div className="w-full absolute left-0 -bottom-72 min-h-96">
         <Image
-          src="/footer-grid.svg"
-          alt="grid"
+          src="/images/footer-grid.svg"
+          alt="Tuka Alsharief | Tuka Alarbi"
           className="w-full h-full opacity-50 "
+          width={200}
+          height={200}
         />
       </div>
 
@@ -24,15 +34,16 @@ const Footer = () => {
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Connect with me today to explore how we can innovate together and
-          achieve impactful results.
+          achieve impactful results
         </p>
-        <a href="mailto:tukaalarbi@gmail.com">
+
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
+            handleClick={handleContactForm}
           />
-        </a>
+
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
@@ -46,14 +57,20 @@ const Footer = () => {
               href={info.link}
               className={cn(
                 "w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-              )}
-            >
-              <Image
-                src={info.img}
-                alt="Tuka Alsharief | Tuka Alarbi | Icons"
-                width={20}
-                height={20}
-              />
+              )}>
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.7 }}
+                onHoverStart={(e) => {}}
+                onHoverEnd={(e) => {}}
+              >
+                <Image
+                  src={info.img}
+                  alt="Tuka Alsharief | Tuka Alarbi"
+                  width={20}
+                  height={20}
+                />
+              </motion.div>
             </Link>
           ))}
         </div>

@@ -18,7 +18,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-4 md:row-span-2 lg:min-h-[35vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/images/b1.svg",
     spareImg: "",
   },
   {
@@ -48,8 +48,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-4",
     imgClassName: "absolute right-0 bottom-0 md:w-76 w-50",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: "/images/b5.svg",
+    spareImg: "/images/grid.svg",
     // "/b4.svg",
   },
 
@@ -61,8 +61,8 @@ export const gridItems = [
     className: "md:col-span-3 md:row-span-1",
     imgClassName: "absolute h-full right-0 md:w-56 w-40",
     titleClassName: "justify-center md:justify-end lg:justify-center top-0",
-    img: "/HAi-logo",
-    spareImg: "/grid.svg",
+    img: "/images/HAi-logo",
+    spareImg: "/images/grid.svg",
   },
   {
     id: 6,
@@ -77,70 +77,79 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
-    id: 1,
-    title: "AI Pantry Tracker | HeadstarterAI",
-    des: "[Coming soon...]",
-    img: "",
-    iconLists: [],
-    link: "https://github.com/alartuka/",
-  },
-  {
-    id: 2,
-    title: "ZamanNews",
-    des: "A website that allows users to view news articles from the past on any given date and country. [In progress]",
-    img: "",
-    iconLists: ["/re.svg"],
-    link: "https://github.com/alartuka/ZamanNews",
-  },
-  {
-    id: 3,
-    title: "mGenAi",
-    des: "AI-powered email generator.",
-    img: "",
-    iconLists: [],
-    link: "https://github.com/alartuka/mGen_ai",
-  },
-  {
-    id: 4,
-    title: "Forage | TechNova22 Hackathon",
-    des: "Efficiency optimization system for foodbank operations that makes use of Machine Learning",
-    img: "/TN22_logo.jpg",
-    iconLists: ["/re.svg", "/tail.svg"],
-    link: "https://github.com/alartuka/Forage",
-  },
-  {
-    id: 5,
-    title: "ProPy | Academic",
-    des: "Image manipulation app, developed with linear algebra fundamentals using processing5.js.",
-    img: "/ProPy_mockup.png",
-    iconLists: [],
-    link: "https://github.com/alartuka/ProPy",
-  },
-  {
-    id: 6,
-    title: "SupportWall | TechNova21 Hackathon",
-    des: "Anonymous support system for students with a sticky-notes organized infinite wall to express themselves anonymously.",
-    img: "/SupportWall.png",
-    iconLists: [],
-    link: "https://github.com/alartuka/SupportWall",
-  },
-  {
-    id: 7,
-    title: "Runners-Tracker",
-    des: "A python GUI developed with tkinter, to track distance ran on entered dates.",
-    img: "",
-    iconLists: [],
-    link: "https://github.com/alartuka/Runners-Tracker",
-  },
-  {
-    id: 8,
-    title: "BrInFo | Academic",
-    des: "A multi-functional and student-centred program to focus, get inspired or take a break. Includes a 25 minutes timer, quotes random generator, and a game.",
-    img: "",
-    iconLists: [],
-    link: "https://github.com/alartuka/BrInFo",
-  },
+	{
+		id: 1,
+		title: "T-Baymax AI | HeadstarterAI",
+		des: "An AI-powered personal healthcare companion",
+		img: "/images/thumbnail-tbaymax-ai.png",
+		iconLists: ["/images/next.svg"],
+		link: "https://github.com/alartuka/T-Baymax-AI",
+	},
+
+	{
+		id: 2,
+		title: "IMS-AI | HeadstarterAI",
+		des: "An AI-powered inventory management system where users can track their inventory items by adding or removing them into the system. Users can also get generated recipes based on the items in their inventory.",
+		img: "/images/thumbnail-ims-ai.png",
+		iconLists: ["/images/next.svg"],
+		link: "https://github.com/alartuka/IMS-AI",
+	},
+	{
+		id: 3,
+		title: "ZamanNews",
+		des: "A website that allows users to view news articles from the past on any given date and country. [In progress]",
+		img: "",
+		iconLists: ["/images/re.svg"],
+		link: "https://github.com/alartuka/ZamanNews",
+	},
+	{
+		id: 4,
+		title: "mGenAi",
+		des: "AI-powered email generator.",
+		img: "",
+		iconLists: [],
+		link: "https://github.com/alartuka/mGen_ai",
+	},
+	{
+		id: 5,
+		title: "Forage | TechNova22 Hackathon",
+		des: "Efficiency optimization system for foodbank operations that makes use of Machine Learning",
+		img: "/images/TN22_logo.jpg",
+		iconLists: ["/images/re.svg", "/images/tail.svg"],
+		link: "https://github.com/alartuka/Forage",
+	},
+	{
+		id: 6,
+		title: "ProPy | Academic",
+		des: "Image manipulation app, developed with linear algebra fundamentals using processing5.js.",
+		img: "/images/ProPy_mockup.png",
+		iconLists: [],
+		link: "https://github.com/alartuka/ProPy",
+	},
+	{
+		id: 7,
+		title: "SupportWall | TechNova21 Hackathon",
+		des: "Anonymous support system for students with a sticky-notes organized infinite wall to express themselves anonymously.",
+		img: "/images/SupportWall.png",
+		iconLists: [],
+		link: "https://github.com/alartuka/SupportWall",
+	},
+	{
+		id: 8,
+		title: "Runners-Tracker",
+		des: "A python GUI developed with tkinter, to track distance ran on entered dates.",
+		img: "",
+		iconLists: [],
+		link: "https://github.com/alartuka/Runners-Tracker",
+	},
+	{
+		id: 9,
+		title: "BrInFo | Academic",
+		des: "A multi-functional and student-centred program to focus, get inspired or take a break. Includes a 25 minutes timer, quotes random generator, and a game.",
+		img: "",
+		iconLists: [],
+		link: "https://github.com/alartuka/BrInFo",
+	},
 ];
 
 export const testimonials = [
@@ -176,38 +185,38 @@ export const testimonials = [
   },
 ];
 
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];
+// export const companies = [
+//   {
+//     id: 1,
+//     name: "cloudinary",
+//     img: "/cloud.svg",
+//     nameImg: "/cloudName.svg",
+//   },
+//   {
+//     id: 2,
+//     name: "appwrite",
+//     img: "/app.svg",
+//     nameImg: "/appName.svg",
+//   },
+//   {
+//     id: 3,
+//     name: "HOSTINGER",
+//     img: "/host.svg",
+//     nameImg: "/hostName.svg",
+//   },
+//   {
+//     id: 4,
+//     name: "stream",
+//     img: "/s.svg",
+//     nameImg: "/streamName.svg",
+//   },
+//   {
+//     id: 5,
+//     name: "docker.",
+//     img: "/dock.svg",
+//     nameImg: "/dockerName.svg",
+//   },
+// ];
 
 export const workExperience = [
   {
@@ -215,7 +224,7 @@ export const workExperience = [
     title: "Software Engineering Fellow",
     desc: "Building 8+ AI apps and APIs using Next.js, OpenAI, Pinecone, StripeAPI in 5 weeks and a final project with a goal of attaining 1000 users acounts or on waitlist or $1000 in revenue",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/images/exp1.svg",
   },
   // {
   //   id: 1,
@@ -236,7 +245,7 @@ export const workExperience = [
     title: "Freelance Web Dev Project",
     desc: "Led the dev of a webapp for a client, from initial concept to deployment.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/images/exp3.svg",
   },
   // {
   //   id: 4,
@@ -250,17 +259,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/images/git.svg",
     link: "https://github.com/alartuka",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/images/twit.svg",
     link: "https://x.com/",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/images/link.svg",
     link: "https://linkedin.com/in/tukaalarbi",
   },
 ];

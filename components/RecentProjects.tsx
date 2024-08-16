@@ -23,25 +23,34 @@ const RecentProjects = () => {
               initial="hidden"
               whileInView="show"
               key={item.id}
-              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            >
+              className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]">
               <div
                 className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-                key={item.id}
-              >
+                key={item.id}>
                 <PinContainer title={item.title} href={item.link}>
                   <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                    <div
-                      className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                      style={{ backgroundColor: "#13162D" }}
-                    >
-                      <Image src="/bg.png" alt="Tuka Alsharief | Tuka Alarbi" />
-                    </div>
-                    <Image
-                      src={item.img}
-                      alt="Tuka Alsharief | Tuka Alarbi"
-                      className="z-10 absolute bottom-0"
-                    />
+                    {!item.img && (
+                      <div
+                        className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                        style={{ backgroundColor: "#13162D" }}>
+                        <Image
+                          src="/images/bg.png"
+                          alt="Tuka Alsharief | Tuka Alarbi"
+                          width={400}
+                          height={400}
+                        />
+                      </div>
+                    )}
+
+                    {item.img && (
+                      <Image
+                        src={item.img}
+                        alt="Tuka Alsharief | Tuka Alarbi"
+                        className="z-10 absolute bottom-0 rounded-3xl"
+                        width={400}
+                        height={400}
+                      />
+                    )}
                   </div>
 
                   <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
@@ -53,8 +62,7 @@ const RecentProjects = () => {
                     style={{
                       color: "#BEC1DD",
                       margin: "1vh 0",
-                    }}
-                  >
+                    }}>
                     {item.des}
                   </p>
 
@@ -66,9 +74,14 @@ const RecentProjects = () => {
                           className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                           style={{
                             transform: `translateX(-${5 * index + 2}px)`,
-                          }}
-                        >
-                          <Image src={icon} alt="icon5" className="p-2" />
+                          }}>
+                          <Image
+                            src={icon}
+                            alt="Tuka Alsharief | Tuka Alarbi"
+                            className="p-2"
+                            width={50}
+                            height={50}
+                          />
                         </div>
                       ))}
                     </div>
@@ -76,8 +89,7 @@ const RecentProjects = () => {
                     <div className="flex justify-center items-center">
                       <Link
                         className="flex lg:text-xl md:text-xs text-sm text-purple"
-                        href={item.link}
-                      >
+                        href={item.link}>
                         GitHub
                       </Link>
                       <FaLocationArrow className="ms-3" color="#CBACF9" />
