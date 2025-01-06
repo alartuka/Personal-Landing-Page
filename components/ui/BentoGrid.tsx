@@ -112,12 +112,12 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && (
-          // add background animation , remove the p tag
+        
+        {/* {id === 6 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
-        )}
+        )} */}
 
         <div
           className={cn(
@@ -166,17 +166,14 @@ export const BentoGridItem = ({
               </div>
             </div>
           )}
-          {id === 6 && (
+          
+          {/* {id === 6 && (
             <div className="mt-5 relative flex gap-3 space-x-2 space-y-4">
-              {/* button border magic from tailwind css buttons  */}
-              {/* add rounded-md h-8 md:h-8, remove rounded-full */}
-              {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
-              {/* add handleCopy() for the copy the text */}
               <div
                 className={`absolute -bottom-2 right-0 ${
                   copied ? "block" : "block"
                 }`}>
-                {/* <img src="/confetti.gif" alt="Tuka Alsharief | Tuka Alarbi" /> */}
+
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
@@ -213,7 +210,8 @@ export const BentoGridItem = ({
                 ))}
               </div>
             </div>
-          )}
+          )} */}
+          
         </div>
       </div>
     </div>

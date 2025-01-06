@@ -4,6 +4,11 @@ import Script from "next/script";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 import { Analytics } from "@vercel/analytics/react";
+import ShootingStars from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import { navItems } from "@/data";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,6 +47,10 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<Analytics />
 
+				<ShootingStars />
+				<StarsBackground />
+				<FloatingNav navItems={navItems} />
+
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="dark"
@@ -49,6 +58,9 @@ export default function RootLayout({
 					disableTransitionOnChange>
 					{children}
 				</ThemeProvider>
+
+				{/* <Footer /> */}
+				
 			</body>
 		</html>
 	);

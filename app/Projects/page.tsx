@@ -1,28 +1,27 @@
 "use client";
 
-import { FaLocationArrow } from "react-icons/fa6";
-import Link from "next/link";
+// import Footer from '@/components/Footer';
+import MagicButton from "@/components/MagicButton";
+import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import ShootingStars from "@/components/ui/shooting-stars";
+import { StarsBackground } from "@/components/ui/stars-background";
 import { projects } from "@/data";
-import { PinContainer } from "./ui/Pin";
-import { motion } from 'framer-motion';
-import { fadeIn, textVariant, staggerContainer } from './ui/motion';
 import Image from "next/image";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import MagicButton from "./MagicButton";
+import Link from "next/link";
+import { FaLocationArrow } from "react-icons/fa6";
 import { Typography } from "@mui/material";
+import CC from "@/components/CC";
 
-const RecentProjects = () => {
-  return (
-		<section id="projects">
+function page() {
+	return (
+		<section id="projects_display">
+			<ShootingStars />
+			<StarsBackground />
 			<div className="py-20">
-				<h1 className="heading">
-					A Small Selection of{" "}
-					<span className="text-purple">Recent Projects</span>
-				</h1>
 				<div
 					className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10"
 					style={{ gridAutoFlow: "dense" }}>
-					{projects.slice(0, 3).map((item) => (
+					{projects.map((item) => (
 						<div key={item.id} className="grid gap-4">
 							<CardContainer className="inter-var w-full h-full">
 								<CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl p-4 border flex flex-col h-full">
@@ -112,20 +111,10 @@ const RecentProjects = () => {
 						</div>
 					))}
 				</div>
-
-				<div className="flex justify-center items-center">
-					<Link href="/Projects">
-						<MagicButton
-							title="See ALL projects"
-							icon={<FaLocationArrow />}
-							position="right"
-						/>
-					</Link>
-				</div>
-
 			</div>
+			<CC />
 		</section>
 	);
-};
+}
 
-export default RecentProjects;
+export default page;

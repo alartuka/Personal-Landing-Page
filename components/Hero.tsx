@@ -7,21 +7,14 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { FlipWords } from "./ui/flip-words";
 
 const Hero = () => {
-// Typewriter effect in hero
-  // const textRef = useRef(null);
-  // useEffect(() => {
-  //   if (textRef.current) {
-  //     init(textRef.current, {
-  //       loop: true,
-  //       showCursor: false,
-  //       typeSpeed: 100,
-  //       backSpeed: 150,
-  //       startDelay: 200,
-  //       backDelay: 2000,
-  //       strings: ["Student", "Developer", "Wonderer"],
-  //   })}
-  // }, [textRef]);
-  const words = ["Student", "AI-Engineer", "Wonderer", "Photographer", "Multilingual"];
+
+  const words = [
+		"Software-Engineer",
+    "Student",
+		"Wonderer",
+		"Creator",
+		"Multilingual",
+	];
 
   return (
     <div className="pb-20 pt-36">
@@ -58,17 +51,21 @@ const Hero = () => {
            *
            *  change md:text-6xl, add more responsive code
            */}
+
           <TextGenerateEffect
             words="A Sense Of Wonder In A World Gone Mad"
             className="text-center text-[30px] md:text-5xl lg:text-6xl"
           />
+
           <div className="h-[12rem] flex justify-center items-center px-4">
             <div className="text-4xl justify-center items-center text-center mx-auto font-normal text-neutral-600 mb-4 dark:text-neutral-400 absolute">
               Hi! I&apos;m
+
               <TextGenerateEffect
                 words="Tuka A."
                 className="inline-block text-center text-[14px] md:text-5xl lg:text-6xl"
               />
+
               <FlipWords words={words} className="block justify-center items-center text-center"/> 
             </div>
           </div>
