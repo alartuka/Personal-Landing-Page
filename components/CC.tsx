@@ -11,15 +11,18 @@ function CC() {
       <p className="md:text-base text-sm md:font-normal font-light">
         Copyright &copy; 2024 Tuka Alsharief | Tuka Alarbi{" "}
         <span className="text-purple">•</span> Inspired by{" "}
-        <a
+{/*         <a
           href="https://github.com/adrianhajdin"
           target="_blank"
           rel="noopener noreferrer"
           className="text-purple hover:text-purple-700 underline"
         >
           Adrian Hajdin
-        </a>
+        </a> */}
       </p>
+      <Link href="https://github.com/adrianhajdin" target="_blank" rel="noopener noreferrer" color="inherit">
+        Adrian Hajdin
+      </Link>
 
       <div className="flex items-center md:gap-3 gap-6">
         {socialMedia.map((info) => (
