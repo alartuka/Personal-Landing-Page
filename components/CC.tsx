@@ -8,24 +8,14 @@ import { cn } from '@/lib/utils';
 function CC() {
   const copyrightSection = (
     <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-      <p className="md:text-base text-sm md:font-normal font-light">
-        Copyright &copy; 2024 Tuka Alsharief | Tuka Alarbi{" "}
-        <span className="text-purple">• 
+      
+      <div className="md:text-base text-sm md:font-normal font-light justify-between items-center">
+        <p>Copyright &copy; 2024 Tuka Alsharief | Tuka Alarbi{" "}</p>
         
-        </span> Inspired by{" "}
+        <span className="text-purple">• </span> Inspired by{" "}
         
-        <Link href="https://github.com/adrianhajdin" target="_blank" rel="noopener noreferrer" color="inherit">
-        Adrian Hajdin
-      </Link>
-{/*         <a
-          href="https://github.com/adrianhajdin"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-purple hover:text-purple-700 underline"
-        >
-          Adrian Hajdin
-        </a> */}
-      </p>
+        <Link href="https://github.com/adrianhajdin" target="_blank" rel="noopener noreferrer" color="inherit">Adrian Hajdin</Link>
+      </div>
       
 
       <div className="flex items-center md:gap-3 gap-6">
