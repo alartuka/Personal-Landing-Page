@@ -7,9 +7,9 @@ import { cn } from '@/lib/utils';
 
 function CC() {
   const copyrightSection = (
-    <div className="flex mt-8 md:flex-row flex-col justify-between items-center p-4">
+    <div className="flex md:flex-row flex-col justify-between items-center pt-20 pb-10">
       
-      <div className="md:text-base text-sm md:font-normal font-light justify-between items-center">
+      <div className="md:text-base text-sm md:font-normal font-light">
         Copyright &copy; 2024 Tuka Alsharief | Tuka Alarbi{" "}
         
         <span className="text-purple">• </span> Inspired by{" "}
