@@ -17,7 +17,7 @@ function page() {
 		<section id="projects_display">
 			<ShootingStars />
 			<StarsBackground />
-			<div className="py-20 p-10">
+			<div className="py-20 p-20">
 				<div
 					className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-10"
 					style={{ gridAutoFlow: "dense" }}>
@@ -111,8 +111,10 @@ function page() {
 						</div>
 					))}
 				</div>
+				
+				<CC />
 			</div>
-			<CC />
+			
 		</section>
 	);
 }
