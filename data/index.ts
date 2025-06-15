@@ -129,10 +129,10 @@ export const projects = [
 	{
 		id: 6,
 		title: "ZamanNews",
-		des: "Web application that allows users to view news articles from the past on any given date and country. [In progress]",
+		des: "Historical News Time Machine that allows users to view news articles from the past on any given date and country.",
 		img: "",
 		iconLists: ["/images/re.svg"],
-		link: "",
+		link: "https://zaman-news.vercel.app/",
 		source: "https://github.com/alartuka/ZamanNews",
 	},
 	{
