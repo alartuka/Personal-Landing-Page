@@ -7,15 +7,14 @@ import { cn } from '@/lib/utils';
 
 function CC() {
   const copyrightSection = (
-    <div className="flex md:flex-row flex-col justify-between items-center pr-10 pl-10 pt-10 pb-3">
-      
-      <div className="md:text-base text-sm md:font-normal font-light">
-        Copyright &copy; 2024 Tuka Alsharief | Tuka Alarbi{" "}
+    <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light">
+        Copyright &copy; 2024 Tuka Alsharief 
         
-        <span className="text-purple">• </span> Inspired by{" "}
+{/*         <span className="text-purple">• </span> Inspired by{" "}
         
-        <Link href="https://github.com/adrianhajdin" target="_blank" rel="noopener noreferrer" color="inherit">Adrian Hajdin</Link>
-      </div>
+        <Link href="https://github.com/adrianhajdin" target="_blank" rel="noopener noreferrer" color="inherit">Adrian Hajdin</Link> */}
+      </p>
       
 
       <div className="flex items-center md:gap-3 gap-6">
@@ -46,7 +45,7 @@ function CC() {
     </div>
   );
 
-  return <section className="w-full pt-20 pb-10">{copyrightSection}</section>;
+  return <section>{copyrightSection}</section>;
 }
 
 export default CC;
