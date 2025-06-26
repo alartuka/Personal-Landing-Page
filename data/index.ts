@@ -79,6 +79,15 @@ export const gridItems = [
 export const projects = [
 	{
 		id: 1,
+		title: "Visealy",
+		des: "Multimodal Image Analysis",
+		img: "",
+		iconLists: ["/images/re.svg"],
+		link: "",
+		source: "https://github.com/alartuka/Visealy",
+	},
+	{
+		id: 2,
 		title: "Aspirai | HeadstarterAI",
 		des: "AI-powered goal achievement partner that helps turn dreams into reality by breaking them down into manageable tasks with personalized recommendations and progress tracking to stay motivated and on track",
 		img: "/images/aspirai.png",
@@ -88,7 +97,7 @@ export const projects = [
 	},
 
 	{
-		id: 2,
+		id: 3,
 		title: "Profspector AI | HeadstarterAI",
 		des: "RAG-based AI application that can understand and respond to complex queries about professors and courses, while drawing upon a curated dataset for accuracy and relevance",
 		img: "/images/profspector.png",
@@ -98,7 +107,7 @@ export const projects = [
 	},
 
 	{
-		id: 3,
+		id: 4,
 		title: "EruditeSpark AI | HeadstarterAI",
 		des: "Web application designed to revolutionize the way students and professionals create, manage, and study flashcards",
 		img: "/images/eruditespark.png",
@@ -108,7 +117,7 @@ export const projects = [
 	},
 
 	{
-		id: 4,
+		id: 5,
 		title: "T-Baymax AI | HeadstarterAI",
 		des: "AI-powered personal healthcare companion",
 		img: "/images/thumbnail-tbaymax-ai.png",
@@ -118,25 +127,25 @@ export const projects = [
 	},
 
 	{
-		id: 5,
+		id: 6,
 		title: "IMS-AI | HeadstarterAI",
-		des: "AI-powered inventory management system where users can track their inventory items by adding or removing them into the system. Users can also get generated recipes based on the items in their inventory.",
+		des: "AI-powered inventory management system where users can track their inventory items by adding or removing them into the system. Users can also get generated recipes based on the items in their inventory",
 		img: "/images/thumbnail-ims-ai.png",
 		iconLists: ["/images/next.svg"],
 		link: "",
 		source: "https://github.com/alartuka/IMS-AI",
 	},
 	{
-		id: 6,
+		id: 7,
 		title: "ZamanNews",
-		des: "Historical News Time Machine that allows users to view news articles from the past on any given date and country.",
+		des: "Historical News Time Machine that allows users to view news articles from the past on any given date and country",
 		img: "",
 		iconLists: ["/images/re.svg"],
 		link: "https://zaman-news.vercel.app/",
 		source: "https://github.com/alartuka/ZamanNews",
 	},
 	{
-		id: 7,
+		id: 8,
 		title: "mGenAi",
 		des: "AI-powered email generator",
 		img: "",
@@ -145,7 +154,7 @@ export const projects = [
 		source: "https://github.com/alartuka/mGen_ai",
 	},
 	{
-		id: 8,
+		id: 9,
 		title: "Forage | TechNova22 Hackathon",
 		des: "Efficiency optimization system for foodbank operations that makes use of Machine Learning",
 		img: "/images/TN22_logo.jpg",
@@ -154,36 +163,36 @@ export const projects = [
 		source: "https://github.com/alartuka/Forage",
 	},
 	{
-		id: 9,
+		id: 10,
 		title: "ProPy | Academic",
-		des: "Image manipulation app, developed with linear algebra fundamentals using processing5.js.",
+		des: "Image manipulation app, developed with linear algebra fundamentals using processing5.js",
 		img: "/images/ProPy_mockup.png",
 		iconLists: [],
 		link: "",
 		source: "https://github.com/alartuka/ProPy",
 	},
 	{
-		id: 10,
+		id: 11,
 		title: "SupportWall | TechNova21 Hackathon",
-		des: "Anonymous support system for students with a sticky-notes organized infinite wall to express themselves anonymously.",
+		des: "Anonymous support system for students with a sticky-notes organized infinite wall to express themselves anonymously",
 		img: "/images/SupportWall.png",
 		iconLists: [],
 		link: "",
 		source: "https://github.com/alartuka/SupportWall",
 	},
 	{
-		id: 11,
+		id: 12,
 		title: "Runners-Tracker",
-		des: "Python GUI developed with tkinter, to track distance ran on entered dates.",
+		des: "Python GUI developed with tkinter, to track distance ran on entered dates",
 		img: "",
 		iconLists: [],
 		link: "",
 		source: "https://github.com/alartuka/Runners-Tracker",
 	},
 	{
-		id: 12,
+		id: 13,
 		title: "BrInFo | Academic",
-		des: "Multi-functional and student-centred program to focus, get inspired or take a break. Includes a 25 minutes timer, quotes random generator, and a game.",
+		des: "Multi-functional and student-centred program to focus, get inspired or take a break. Includes a 25 minutes timer, quotes random generator, and a game",
 		img: "",
 		iconLists: [],
 		link: "",
