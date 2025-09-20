@@ -89,7 +89,7 @@ export const projects = [
 	{
 		id: 2,
 		title: "Arven | Headstarter 2025",
-		des: f"""AI Customer Support Agent for `[Aven](https://www.aven.com/)`'s Website""",
+		des: "AI Customer Support Agent for Aven's Website",
 		img: "",
 		iconLists: ["/images/re.svg"],
 		link: "",
