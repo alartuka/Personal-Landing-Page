@@ -79,7 +79,7 @@ export const gridItems = [
 export const projects = [
 	{
 		id: 1,
-		title: "BackSpacely | Headstarter 2025",
+		title: "BackSpacely",
 		des: "AI Coding Agent that automatically makes pull requests to GitHub repos based on a user's prompt",
 		img: "",
 		iconLists: ["/images/re.svg"],
@@ -88,7 +88,7 @@ export const projects = [
 	},
 	{
 		id: 2,
-		title: "Arven | Headstarter 2025",
+		title: "Arven",
 		des: "AI Customer Support Agent for Aven's Website",
 		img: "",
 		iconLists: ["/images/re.svg"],
@@ -106,7 +106,7 @@ export const projects = [
 	},
 	{
 		id: 4,
-		title: "Aspirai | Headstarter 2024",
+		title: "Aspirai",
 		des: "AI-powered goal achievement partner that helps turn dreams into reality by breaking them down into manageable tasks with personalized recommendations and progress tracking to stay motivated and on track",
 		img: "/images/aspirai.png",
 		iconLists: ["/images/next.svg"],
@@ -116,7 +116,7 @@ export const projects = [
 
 	{
 		id: 5,
-		title: "Profspector AI | Headstarter 2024",
+		title: "Profspector",
 		des: "RAG-based AI application that can understand and respond to complex queries about professors and courses, while drawing upon a curated dataset for accuracy and relevance",
 		img: "/images/profspector.png",
 		iconLists: ["/images/next.svg"],
@@ -126,7 +126,7 @@ export const projects = [
 
 	{
 		id: 6,
-		title: "EruditeSpark AI | Headstarter 2024",
+		title: "EruditeSpark",
 		des: "Web application designed to revolutionize the way students and professionals create, manage, and study flashcards",
 		img: "/images/eruditespark.png",
 		iconLists: ["/images/next.svg"],
@@ -136,7 +136,7 @@ export const projects = [
 
 	{
 		id: 7,
-		title: "T-Baymax AI | Headstarter 2024",
+		title: "T-Baymax AI",
 		des: "AI-powered personal healthcare companion",
 		img: "/images/thumbnail-tbaymax-ai.png",
 		iconLists: ["/images/next.svg"],
@@ -146,7 +146,7 @@ export const projects = [
 
 	{
 		id: 8,
-		title: "IMS-AI | Headstarter 2024",
+		title: "IMS-AI",
 		des: "AI-powered inventory management system where users can track their inventory items by adding or removing them into the system. Users can also get generated recipes based on the items in their inventory",
 		img: "/images/thumbnail-ims-ai.png",
 		iconLists: ["/images/next.svg"],
@@ -164,16 +164,7 @@ export const projects = [
 	},
 	{
 		id: 10,
-		title: "mGenAi",
-		des: "AI-powered email generator",
-		img: "",
-		iconLists: [],
-		link: "",
-		source: "https://github.com/alartuka/mGen_ai",
-	},
-	{
-		id: 11,
-		title: "Forage | TechNova22 Hackathon",
+		title: "Forage",
 		des: "Efficiency optimization system for foodbank operations that makes use of Machine Learning",
 		img: "/images/TN22_logo.jpg",
 		iconLists: ["/images/re.svg", "/images/tail.svg"],
@@ -181,8 +172,8 @@ export const projects = [
 		source: "https://github.com/alartuka/Forage",
 	},
 	{
-		id: 12,
-		title: "ProPy | Academic",
+		id: 11,
+		title: "ProPy",
 		des: "Image manipulation app, developed with linear algebra fundamentals using processing5.js",
 		img: "/images/ProPy_mockup.png",
 		iconLists: [],
@@ -190,26 +181,26 @@ export const projects = [
 		source: "https://github.com/alartuka/ProPy",
 	},
 	{
-		id: 13,
-		title: "SupportWall | TechNova21 Hackathon",
+		id: 12,
+		title: "SupportWall",
 		des: "Anonymous support system for students with a sticky-notes organized infinite wall to express themselves anonymously",
 		img: "/images/SupportWall.png",
 		iconLists: [],
 		link: "",
 		source: "https://github.com/alartuka/SupportWall",
 	},
+	// {
+	// 	id: 14,
+	// 	title: "Runners-Tracker",
+	// 	des: "Python GUI developed with tkinter, to track distance ran on entered dates",
+	// 	img: "",
+	// 	iconLists: [],
+	// 	link: "",
+	// 	source: "https://github.com/alartuka/Runners-Tracker",
+	// },
 	{
-		id: 14,
-		title: "Runners-Tracker",
-		des: "Python GUI developed with tkinter, to track distance ran on entered dates",
-		img: "",
-		iconLists: [],
-		link: "",
-		source: "https://github.com/alartuka/Runners-Tracker",
-	},
-	{
-		id: 15,
-		title: "BrInFo | Academic",
+		id: 13,
+		title: "BrInFo",
 		des: "Multi-functional and student-centred program to focus, get inspired or take a break. Includes a 25 minutes timer, quotes random generator, and a game",
 		img: "",
 		iconLists: [],
